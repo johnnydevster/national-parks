@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    
+}
+
+/* Swiper classes */
+.swiper-pagination {
+    @apply absolute bottom-10 left-0 right-0 flex z-30 gap-8 p-4 w-fit mx-auto rounded-full items-end;
+}
+
+.swiper-pagination-bullet {
+    @apply w-5 h-3 rounded-sm bg-slate-400/50 hover:bg-slate-300/80 block transition-all cursor-pointer;
+}
+
+.swiper-pagination-bullet-active {
+    @apply bg-slate-200 hover:bg-slate-200 scale-125;
+}
+
+/* The popup bubble styling. */
+.popup-bubble {
+    /* Position the bubble centred-above its parent. */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -100%);
+    /* Style the bubble. */
+    padding: 5px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    overflow-y: auto;
+    max-height: 60px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* The parent of the bubble. A zero-height div at the top of the tip. */
+  .popup-bubble-anchor {
+    /* Position the div a fixed distance above the tip. */
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+    left: 0;
+  }
+  
+  /* This element draws the tip. */
+  .popup-bubble-anchor::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Center the tip horizontally. */
+    transform: translate(-50%, 0);
+    /* The tip is a https://css-tricks.com/snippets/css/css-triangle/ */
+    width: 0;
+    height: 0;
+    /* The tip is 8px high, and 12px wide. */
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid white;
+  }
+  
+  /* JavaScript will position this div at the bottom of the popup tip. */
+  .popup-container {
+    cursor: auto;
+    height: 0;
+    position: absolute;
+    /* The max width of the info window. */
+    width: 400px;
+  }
+
+
+  .gm-style .gm-style-iw-c {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+
+.gm-style .gm-style-iw-d {
+    overflow: visible !important;
+    padding: 0 !important;
+}
+
+.gm-style .gm-style-iw-tc::after {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    padding: 0 !important;
+}
