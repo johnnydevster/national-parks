@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer components {
+  .section {
+    @apply mt-20 mb-20 lg:mt-36 lg:mb-36
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+  }
     
 }
 

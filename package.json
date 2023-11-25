@@ -12,11 +12,15 @@
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.2",
     "@googlemaps/markerclusterer": "^2.5.0",
+    "@mantine/core": "^7.2.2",
+    "@mantine/hooks": "^7.2.2",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
-    "swiper": "^11.0.3"
+    "react-query": "^3.39.3",
+    "swiper": "^11.0.3",
+    "wikipedia": "^2.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -28,6 +32,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.11.0",
+    "postcss-simple-vars": "^7.0.1",
     "tailwindcss": "^3.3.5",
     "vite": "^4.4.5"
   }

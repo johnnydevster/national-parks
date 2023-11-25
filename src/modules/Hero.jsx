@@ -37,13 +37,7 @@ function Hero({ parks }) {
 
   return (
     <section className="h-screen flex">
-      <div
-        style={{
-          clipPath:
-            "polygon(0% 0%, 100% 0%, 100% calc(100% - 40px), 50% 100%, 0% calc(100% - 40px), 0% 0%)",
-        }}
-        className="h-full w-full relative overflow-hidden z-[1]"
-      >
+      <div className="h-full w-full relative overflow-hidden z-[1]">
         <Swiper
           ref={swiperRef}
           effect="fade"
@@ -139,8 +133,8 @@ function TextContent({
   const clipthingThickness = "2px";
 
   return (
-    <div className="absolute inset-0 z-20 flex items-center">
-      <div className="relative text-slate-200 p-8 mx-20">
+    <div className="absolute inset-0 z-20 flex items-center container">
+      <div className="relative text-slate-200 p-8">
         <div
           style={{
             clipPath: `polygon(0px 0px, ${clipthingLength} 0px, ${clipthingLength} ${clipthingThickness}, ${clipthingThickness} ${clipthingThickness}, ${clipthingThickness} ${clipthingHeight}, 0px ${clipthingHeight})`,
